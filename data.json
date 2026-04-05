@@ -1,0 +1,58 @@
+[
+  {
+    "sno": 1,
+    "activity": "Check for short dumps in ST22",
+    "status": "Done",
+    "doc_title": "Short Dump Monitoring (ST22)",
+    "doc_description": "Checked the system for runtime errors using the ST22 transaction. No critical ABAP dumps were found during the review period. System is running cleanly.",
+    "image": "images/st22.png"
+  },
+  {
+    "sno": 2,
+    "activity": "Monitor background jobs in SM37",
+    "status": "Warning",
+    "doc_title": "Background Job Monitoring (SM37)",
+    "doc_description": "Reviewed scheduled and completed background jobs via SM37. Two jobs were found in a 'Cancelled' state due to missing variant. Manual re-trigger required. All other jobs completed successfully.",
+    "image": "images/sm37.png"
+  },
+  {
+    "sno": 3,
+    "activity": "Check system log in SM21",
+    "status": "Done",
+    "doc_title": "System Log Review (SM21)",
+    "doc_description": "Reviewed the system log in SM21 for the past 7 days. No critical entries or recurring errors were detected. Minor informational messages noted but no action required.",
+    "image": "images/sm21.png"
+  },
+  {
+    "sno": 4,
+    "activity": "Database tablespace utilisation",
+    "status": "Warning",
+    "doc_title": "Database Tablespace Utilisation",
+    "doc_description": "Current tablespace utilisation is at 82%, approaching the 85% warning threshold. Archiving old data is recommended within the next 5 business days to prevent growth issues.",
+    "image": "images/db_space.png"
+  },
+  {
+    "sno": 5,
+    "activity": "Verify system availability (ping test)",
+    "status": "Done",
+    "doc_title": "System Availability Check",
+    "doc_description": "All application servers responded successfully to availability checks. No downtime was recorded during the reporting period. Uptime: 100%.",
+    "image": null
+  },
+  {
+    "sno": 6,
+    "activity": "Review failed login attempts (SM18/SUIM)",
+    "status": "Failed",
+    "doc_title": "Failed Login Audit (SM18 / SUIM)",
+    "doc_description": "Detected 47 failed login attempts within a 24-hour window originating from a single user ID. Potential brute-force activity suspected. User account has been locked pending investigation. Security team has been notified.",
+    "image": "images/login_audit.png"
+  },
+  {
+    "sno": 7,
+    "activity": "Check transport queue (STMS)",
+    "status": "Done",
+    "doc_title": "Transport Management System (STMS)",
+    "doc_description": "Transport queue was reviewed via STMS. All pending transports for the week have been imported successfully into the target landscape. No errors or conflicts reported.",
+    "image": "images/stms.png"
+  }
+]
